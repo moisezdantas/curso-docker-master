@@ -1,30 +1,29 @@
-# curso-docker
+## Instalação do docker
 
-Se você já instalou uma versão anterior, pode remove-la
+## Se você já instalou uma versão anterior, pode remove-la
 1. sudo apt-get remove docker docker-engine
-
-Instale gerenciadores de chaves e ferramentas relacionadas
+..
+## Instale gerenciadores de chaves e ferramentas relacionadas
 2.sudo apt-get install apt-transport-https ca-certificates curl python-software-properties software-properties-common
-
-Baixe e instale a chave 
+..
+## Baixe e instale a chave 
 3. curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-
-Verifique se a chave está instalada com sucesso
+..
+## Verifique se a chave está instalada com sucesso
 4. sudo apt-key fingerprint 0EBFCD88
-
 Se ocorrer tudo certo, exibirá a seguinte mensagem:
 pub 4096R/0EBFCD88 2017-02-22 Key fingerprint = 9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88 
  uid Docker Release (CE deb) <docker@docker.com> 
  sub 4096R/F273FCD8 2017-02-22
-
-Adicione também o repostitório oficial do Docker
+..
+## Adicione também o repostitório oficial do Docker
 5. sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian wheezy stable"
-
-Atualize os pacotes
+..
+## Atualize os pacotes
 6. sudo apt-get update
-
-Instale o Docker-ce
+..
+## Instale o Docker-ce
 7. sudo apt-get install docker-ce
-
-Verifique se o docker está instalado corretamente
+..
+## Verifique se o docker está instalado corretamente
 8. sudo docker run hello-world
